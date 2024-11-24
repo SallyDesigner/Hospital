@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> التبرع </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/v4-shims.min.css">
+    <link rel="icon" href="Images/logo2.png">
+    <style>
+        .wrapper .inpuBox {
+            width: 940px;
+        }
+        .wrapper .inpuBox select{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper f-cen">
+        <div class="container f-cen p16">
+            <form action="index.html" class="p16 g8" id="myform">
+                <div class="title txt-sub">
+                    <h1 class="title f-cen f-col"> بطاقة التبرع </h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="inpuBox">
+                            <span> اسم المتبرع :</span>
+                            <input type="text" name="name" id="name" placeholder="اسمك الثلاثي" tabindex="1" required>
+                        </div>
+                        <div class="inpuBox">
+                            <span> المرفقات :</span>
+                            <abbr title="أرفق صورة هويتك"><input type="file" name="tel" id="tel" placeholder="رافق صورة هويتك" tabindex="4" required></abbr>
+                        </div>
+                        <div class="inpuBox">
+                            <span> رقم الحساب البنكي :</span>
+                            <abbr title=" أختر أحد الحسابات">
+                            <select name="select" id="option2" required>
+                                <option value=""></option>
+                                <option value="">9555676722111170000</option>
+                                <option value="">9555676722111180000</option>
+                                <option value="">9555676722111190000</option>
+                                <option value="">9555676722111160000</option>
+                            </select>
+                        </abbr>
+                        </div>
+                    </div>
+                </div>
+                <div id="submit">
+                    <button type="reset" class="bt btn">حذف</button>
+                    <button type="submit" class="bt btn" id="submit">إرسال</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

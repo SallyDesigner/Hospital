@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> عملية التسجيل </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/v4-shims.min.css">
+    <link rel="icon" href="Images/logo2.png">
+</head>
+
+<body>
+    <div class="wrapper f-cen">
+        <!-- <div class="nav-button">
+            <button class="btm width-btn m8" id="loginBtn"> سجل بطاقة </button>
+            <button class="btm m8" id="registerBtn">تبرع الآن</button>
+        </div> -->
+        <div class="container f-cen p16">
+            <form action="index.html" class="p16 g8" id="myform">
+                <div class="title txt-sub">
+                    <h1 class="title f-cen f-col"> بطاقة تسجيل </h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="inpuBox">
+                            <span> اسم المريض :</span>
+                            <input type="text" name="name" id="name" placeholder="اسمك الثلاثي" tabindex="1" required>
+                        </div>
+                        <div class="inpuBox">
+                            <span> البريد الألكتروني :</span>
+                            <input type="email" name="email" id="email" placeholder="name@gemail.com" tabindex="2" required>
+                        </div>
+                        <div class="flex">
+                            <div class="inpuBox">
+                                <span> رقم الهاتف / موبايل :</span>
+                                <input type="tel" name="tel" id="tel" placeholder="+000 000 000 000" tabindex="3" value="+963" required>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inpuBox">
+                            <span> العمر :</span>
+                            <abbr title="يجب ان يكون عمرك اكثر من 15 للقيام بملئ البيانات">
+                                <input type="number" name="number" id="number" placeholder="min 15" min="15" max="90" tabindex="4" required>
+                            </abbr>
+                        </div>
+                        <div class="flex f-col">
+                            <div class="inpuBox">
+                            </div>
+                            <div class="inpuBox">
+                                <span> الطبيب :</span>
+                                <select name="select" id="option1" required>
+                                    <option value=""></option>
+                                    <option value=""> د.نور حمامي </option>
+                                    <option value=""> د.لين بيطار</option>
+                                    <option value=""> د.حسن الحسن</option>
+                                    <option value=""> د.رامي حايك</option>
+                                    <option value=""> د.عامر دنو</option>
+                                    <option value=""> د.شهد الأحمد</option>
+                                    <option value=""> د.أسماء خياطة</option>
+                                    <option value=""> د.عائشة ناصر</option>
+                                    <option value=""> د.زينة فاعور</option>
+                                    <option value=""> د.علي راغب</option>
+                                    <option value=""> د.محمود زاهر</option>
+                                    <option value=""> د.رغد حسون</option>
+                                </select>
+                            </div>
+                            <!-- <div class="inpuBox">
+                                <span> القسم :</span>
+                                <select name="select" id="option2" required>
+                                    <option value=""></option>
+                                    <option value="">قلبية</option>
+                                    <option value="">عظمية</option>
+                                    <option value="">أطفال</option>
+                                    <option value="">نسائية</option>
+                                    <option value="">عينية</option>
+                                    <option value="">داخلية</option>
+                                    <option value="">دماغ</option>
+                                    <option value="">أورام</option>
+                                    <option value="">أذن أنف حنجرة</option>
+                                    <option value="">تجميل</option>
+                                    <option value="">جلدية</option>
+                                    <option value="">أسنان</option>
+                                </select>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="inpuBox">
+                    <span id="textarea1" for="textarea1"> الحالة :</span>
+                    <textarea name="textarea" id="textarea" rows="2" maxlength="300" placeholder=" بماذا تشعر ???"></textarea>
+                </div>
+                <div id="submit">
+                    <button type="reset" class="bt btn">حذف</button>
+                    <button type="submit" class="bt btn" id="submit">إرسال للطبيب</button>
+                    <a href="Donations.html" class="bt btn">تبرع الآن</a>
+                    <a href="index.html" class="bt btn"><i class="fa fa-"></i> عودة </a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <script src="scripts/signup.js"></script>
+</body>
+
+</html>
